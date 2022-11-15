@@ -6,10 +6,11 @@ import { SearchBox } from './SearchBar';
 
 export function Navbar(){
     const activeClassName = 'underline underline-offset-[14px] decoration-red-600 decoration-2';
+    
 
     return(
         <>
-        <div className='fixed h-[90px] w-full bg-black flex flex-col justify-center'>
+        <div className='sticky top-0 z-50 h-[90px] w-full bg-black flex flex-col justify-center'>
             <div className='flex flex-row justify-around text-gray-300 sm:text-xs md:text-sm lg:text-sm xl:text-base'>
                 <div className='justify-center basis-1/8'>
                     <img className='h-[80px] w-[140px]' src={require('../images/logo.png')} alt='logo'/>
